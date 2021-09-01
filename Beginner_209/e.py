@@ -29,7 +29,7 @@ def solve(player, end, visited):
                 sol[end] = player
                 return player
         else:
-            solve(player == 'Takahashi' ? 'Aoki' : 'Takahashi', e, visited)
+            solve((player == 'Takahashi' ? 'Aoki' : 'Takahashi'), e, visited)
 
 for i in range(n):
     print(solve('Takahashi', n[i][-3:], list()))
